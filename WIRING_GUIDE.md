@@ -2,7 +2,11 @@
 
 ### Overview
 
-![Generative AI 3D image of the mtKeebs SplitChevron keyboard]([https://imgur.com/a/3d-generative-ai-image-of-splitchevron-keyboard-osvKigf](https://imgur.com/gallery/3d-generative-ai-image-of-splitchevron-keyboard-osvKigf#qlgp3re) "mtKeebs SplitChevron")
+```
+{r echo = FALSE, results = 'asis'}
+image = "https://cdn.britannica.com/84/206384-050-00698723/Javan-gliding-tree-frog.jpg"
+cat(paste0('<center><img src="', image,  '"></center>')) 
+```
 
 The SplitChevron is my custom-built, hand-wired, unibody ergonomic split keyboard. It has a single rotary encoder and a 1.3" OLED display. I initially considered both QMK and ZMK, but I really wanted a wireless option via bluetooth (ruling out QMK) and I wanted to the display to show things that I was unable to figure out how to do with ZMK (e.g., current weather via OpenWeather's API), so I ended up programming the keyboard using CircuitPython. The keyboard is essentially a 5 x 15 key matrix, although there aren't physical keys at every matrix location. The build uses the Adafruit HUZZAH32 ESP32 Feather, perhaps not the best option, but it has integrated WiFi (integrated 802.11b/g/n) and dual-mode bluetooth (classic and BLE), a 2-pin JST-PH connector for connecting a 3.7v LiPo battery, a click switch button to turn the battery on/off when not not plugged in and not being used, and a momentary reset button to reset the board if the keyboard key combo isn't working for some reason so I don't have to open the case to reset the board.
 
