@@ -70,7 +70,7 @@ COL2ROW orientation
 Install **1N4148 diodes** to each switch, **cathode (band) toward the row wire** (anode toward the switch). This prevents ghosting during multi-key presses.
 
 ```
- COL wire ────|>|  [switch] ──── |>| diode ──── |>| ROW wire
+ COL wire ───> [switch] ───> diode ───> ROW wire
                             cathode (band) faces ROW
 ```
 
